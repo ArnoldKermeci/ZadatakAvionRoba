@@ -29,10 +29,11 @@ public class Roba {
 
     }
 
-    public Roba(String naziv, String opis, double tezina){
+    public Roba(String naziv, String opis, double tezina, Avion avion){
         this.naziv=naziv;
         this.opis=opis;
         this.tezina=tezina;
+        this.avion=avion;
     }
 
     public String getNaziv() {

@@ -29,12 +29,12 @@ public class Zadaci1KreiranjeTabela {
             }
         }
         try {
-            TableUtils.clearTable(connectionSource, Roba.class);
+            TableUtils.dropTable(connectionSource, Roba.class, true);
         } catch (SQLException e) {
             e.printStackTrace();
         }
         try {
-            TableUtils.clearTable(connectionSource, Avion.class);
+            TableUtils.dropTable(connectionSource, Avion.class, true);
         } catch (SQLException e) {
             e.printStackTrace();
         }
